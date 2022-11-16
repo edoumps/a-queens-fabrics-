@@ -1,0 +1,8 @@
+<h1><%= @product.title %></h1>
+<p><%= simple_format image_tag @product.image_1.url, width: "400" %></p>
+<h3><%= @product.price %> fcfa</h3>
+<h4><%= @product.description %></h4>
+
+<p>
+  <%= link_to "Back to all fabrics", products_path %>
+</p>
