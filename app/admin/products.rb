@@ -9,6 +9,20 @@ ActiveAdmin.register Product do
 
   # Active Admin Form Settings
 
+  index do
+    selectable_column
+    index_column
+    column "Main image" do |product|
+      image_tag product.image_1.thumb.url, width: "40"
+    end
+    column :title
+    column :is_featured
+    column :is_sold_out
+
+    actions
+
+  end
+
   form do |f|
     
     f.inputs "Product info" do
