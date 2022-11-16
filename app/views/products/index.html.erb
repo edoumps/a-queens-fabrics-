@@ -1,0 +1,8 @@
+<h1>All Fabrics</h1>
+<h2>2022 Collection</h2>
+
+<% @products.each do |product| %>
+
+  <%= simple_format link_to product.title, product_path(product) %>
+
+<% end %>
