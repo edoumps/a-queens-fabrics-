@@ -1,0 +1,7 @@
+<%= link_to product_path(product) do %>
+  <p><%= image_tag product.image_1.url, width: "660" %></p>
+<% end %>
+<h3> 
+<%= simple_format link_to product.title, product_path(product) %>
+</h3>  
+<p>45000fcfa</p>

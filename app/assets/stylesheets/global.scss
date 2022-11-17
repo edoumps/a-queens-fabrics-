@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Inter+Tight:wght@100;200;300;400;500&family=Poppins:wght@100;200;300;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Inter+Tight:wght@100;200;300;400;500&family=Poppins:wght@100;200;300;500;600;700;800&display=swap');
+
+/*
+font-family: 'Fuzzy Bubbles', cursive;
+font-family: 'Inter Tight', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+$fluo: #04fe1d;
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+    h1 {
+      margin: 0;
+    }
+
+    .logo a {
+      font-size: 1.5em;
+      font-family: 'Fuzzy Bubbles', cursive;
+      color: grey;
+      transition: color 0.55s;
+      text-decoration: none;
+
+      &:hover {
+        color: $fluo;
+      }
+    }
+
+    nav {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2em;
+      text-decoration: none;
+      a {
+        text-decoration: none;
+        color: grey;
+        border-bottom: 0.1em solid grey;
+        transition: border-bottom-color 0.25s;
+        margin: 0 0 0 10px;
+
+        &:hover {
+          border-bottom-color: $fluo;
+        }
+      }
+    }
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .product_list a {
+    text-decoration: none;
+  }
+
+  footer {
+    color: #999;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+.product_featured {
+  width: 200px;
+
+  img {
+    width: 100%;
+  }
+}
